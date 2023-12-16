@@ -7,5 +7,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/feature']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mtulasi41/online-botique.git']])
             }
         }
+        stage('Deploy K8s'){
+            steps{
     }
 }
